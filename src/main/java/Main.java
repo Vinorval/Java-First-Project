@@ -1,8 +1,11 @@
+import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        // ваш код начнется здесь
-        // вы не должны ограничиваться только классом Main и можете создавать свои классы по необходимости
-        System.out.println("Привет Мир");
+        Scanner sc = new Scanner(System.in);
+        do {
+            System.out.println("Здравствуйте!\nВведите число на скольких человек необходимо разделить счёт:");
+            if(sc.hasNextInt() && sc.nextInt() > 1) System.out.println("Создаём калькулятор...");
+        } while(sc.nextInt() <= 1);
     }
 }
