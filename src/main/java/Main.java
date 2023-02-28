@@ -3,9 +3,13 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        do {
+        for(;;) {
             System.out.println("Здравствуйте!\nВведите число на скольких человек необходимо разделить счёт:");
-            if(sc.hasNextInt() && sc.nextInt() > 1) System.out.println("Создаём калькулятор...");
-        } while(sc.nextInt() <= 1);
+            if(sc.hasNextInt() && sc.nextInt() > 1) {
+                System.out.println("Создаём калькулятор...");
+                sc.close();
+                break;
+            }
+        }
     }
 }
