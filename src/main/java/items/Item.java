@@ -10,12 +10,10 @@ public class Item {
     }
 
     public String addName(String name) {
-        System.out.println("Введите имя товара:");
-        return this.name = this.name + " " + name;
+        return this.name = this.name + "\n" + name;
     };
 
     public double addPrice(double price) {
-        System.out.println("Введите стоимость товара:");
         return this.price = this.price + price;
     };
 }
