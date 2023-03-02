@@ -8,4 +8,14 @@ public class Item {
         this.name = name;
         this.price = price;
     }
+
+    public String addName(String name) {
+        System.out.println("Введите имя товара:");
+        return this.name = this.name + " " + name;
+    };
+
+    public double addPrice(double price) {
+        System.out.println("Введите стоимость товара:");
+        return this.price = this.price + price;
+    };
 }

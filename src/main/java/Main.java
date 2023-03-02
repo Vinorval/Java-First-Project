@@ -17,10 +17,8 @@ public class Main {
             }
         }
         do {
-            System.out.println("Введите имя товара:");
-            items.name = items.name + " " + sc.next();
-            System.out.println("Введите стоимость товара:");
-            items.price = items.price + sc.nextDouble();
+            items.addName(sc.next());
+            items.addPrice(sc.nextDouble());
             System.out.println("Товар добавлен" +
                     "\n Все товары:" + items.name + " " + "на сумму" + items.price +
                     "Если хотите добавить товар, введите \"да\"" +
